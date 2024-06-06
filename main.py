@@ -94,7 +94,7 @@ def blackjack():
             break
     
     # Once the user is done, it's time to let the computer play. The computer should keep drawing cards as long as it has a score less than 17.
-    while calculate_score(computer_cards) < 17:
+    while calculate_score(computer_cards) != 0 and calculate_score(computer_cards) < 17:
         give_card_computer()
     
     print()

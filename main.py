@@ -73,8 +73,7 @@ def blackjack():
     
     # Call calculate_score(). If the computer or the user has a blackjack (0) or if the user's score is over 21, then the game ends.
     def is_it_game_over():
-        if calculate_score(user_cards) == 0 or calculate_score(computer_cards) == 0 or calculate_score(user_cards) > 21:
-            print("game ends")   
+        if calculate_score(user_cards) == 0 or calculate_score(computer_cards) == 0 or calculate_score(user_cards) > 21:  
             return True
         return False
     
